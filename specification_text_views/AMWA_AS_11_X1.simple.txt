@@ -403,7 +403,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: optional
             [B] Picture format constraints
                 Conformance: mandatory
-                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:0 system"; "Coding format" is "10 bits per component"
+                [A] The <Picture Essence> has an {video signal format} of {2160p25} or {2160p50}".
                 [A] <bit_depth_luma_minus8> is "2" and <bit_depth_chroma_minus8> is "2".
                 [A] <chroma_format_idc> is "1" and <separate_colour_plane_flag> is "0".
                 [N] AVC constraints summary
@@ -428,7 +428,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: optional
             [B] Picture format constraints
                 Conformance: mandatory
-                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:0 system"; "Coding format" is "10 bits per component"
+                [A] The <Picture Essence> has an {video signal format} of {2160p25} or {2160p50}".
                 [A] <bit_depth_luma_minus8> is "2" and <bit_depth_chroma_minus8> is "2".
                 [A] <chroma_format_idc> is "1" and <separate_colour_plane_flag> is "0".
                 [N] AVC constraints summary
@@ -452,7 +452,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: optional
             [B] Picture format constraints
                 Conformance: mandatory
-                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:2 system"; "Coding format" is "10 bits per component"
+                [A] The <Picture Essence> has an {video signal format} of {2160p25} or {2160p50}".
                 [A] <bit_depth_luma_minus8> is "2" and <bit_depth_chroma_minus8> is "2".
                 [A] <chroma_format_idc> is "2" and <separate_colour_plane_flag> is "0".
                 [N] AVC constraints summary
@@ -477,7 +477,7 @@ There are two special types of Block which allow the value of one Block to be se
             Conformance: optional
             [B] Picture format constraints
                 Conformance: mandatory
-                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:2 system"; "Coding format" is "10 bits per component"
+                [A] The <Picture Essence> has an {video signal format} of {2160p25} or {2160p50}".
                 [A] <bit_depth_luma_minus8> is "2" and <bit_depth_chroma_minus8> is "2".
                 [A] <chroma_format_idc> is "2" and <separate_colour_plane_flag> is "0".
                 [N] AVC constraints summary
