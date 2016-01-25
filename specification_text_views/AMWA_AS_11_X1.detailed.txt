@@ -1452,6 +1452,12 @@ There are two special types of Block which allow the value of one Block to be se
                     [T] video_full_range_flag
                         An AVC syntax element that indicates the black level and range of the luma and chroma signals.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/ITU/T-Rec-H.264/term/video_full_range_flag/>
+                [N] Implementation Notes
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E22/>
+                    [A] H.264 includes a table of enumerated values for "Transfer characteristics". This table does not yet include enumerations for transfer characteristics used in relation to higher dynamic range content. Work has begun to extend the table to include these values.
+                        
+                        If a value cannot be found in the table that is appropriate to the content being encoded, then the correct value is `2` "Unspecified".
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E22/artefacts/1.md>
             [B] AFD Presence
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AFD_0/>
