@@ -1379,7 +1379,7 @@ There are two special types of Block which allow the value of one Block to be se
             [B] Picture format constraints
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/>
-                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:0 system" or "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is not necessarily conformant; "System colorimetry" is not necessarily conformant.
+                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:0 system" or "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is "Non-constant luminance"; "Non-linear transfer function" is not necessarily conformant.
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/artefacts/2.xml>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
