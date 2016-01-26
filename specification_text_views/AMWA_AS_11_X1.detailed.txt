@@ -1460,6 +1460,21 @@ There are two special types of Block which allow the value of one Block to be se
                         
                         If a value cannot be found in the table that is appropriate to the content being encoded, then the correct value is `2` "Unspecified".
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E22/artefacts/1.md>
+            [B] Picture Essence Descriptor constraints
+                Conformance: mandatory
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/>
+                [A] In the Picture Essence Descriptor the (ordinarily optional) "Signal Standard" property is not present or has a value of `0`.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/1.md>
+                [A] In the Picture Essence Descriptor the (ordinarily optional) "Transfer Characteristics" property is present.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/2.md>
+                [A] In the Picture Essence Descriptor the (ordinarily optional) "Color Primaries" property is present.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/3.md>
+                [A] In the Picture Essence Descriptor the (ordinarily optional) "Coding Equations" property is present.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/4.md>
+                [N] Implementation Notes
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E25/>
+                    [A] The SMPTE Metadata Registers may not yet contain all of the Labels required to accurately describe the Picture Essence that this Specification is intended to support. Work has begun to add these Labels to the SMPTE Metadata Registers.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E25/artefacts/1.md>
             [B] AFD Presence
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AFD_0/>

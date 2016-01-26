@@ -445,6 +445,14 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] H.264 includes a table of enumerated values for "Transfer characteristics". This table does not yet include enumerations for transfer characteristics used in relation to higher dynamic range content. Work has begun to extend the table to include these values.
                         
                         If a value cannot be found in the table that is appropriate to the content being encoded, then the correct value is `2` "Unspecified".
+            [B] Picture Essence Descriptor constraints
+                Conformance: mandatory
+                [A] In the Picture Essence Descriptor the (ordinarily optional) "Signal Standard" property is not present or has a value of `0`.
+                [A] In the Picture Essence Descriptor the (ordinarily optional) "Transfer Characteristics" property is present.
+                [A] In the Picture Essence Descriptor the (ordinarily optional) "Color Primaries" property is present.
+                [A] In the Picture Essence Descriptor the (ordinarily optional) "Coding Equations" property is present.
+                [N] Implementation Notes
+                    [A] The SMPTE Metadata Registers may not yet contain all of the Labels required to accurately describe the Picture Essence that this Specification is intended to support. Work has begun to add these Labels to the SMPTE Metadata Registers.
             [B] AFD Presence
                 Conformance: mandatory
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "ActiveFormatDescriptor" property is not present.
