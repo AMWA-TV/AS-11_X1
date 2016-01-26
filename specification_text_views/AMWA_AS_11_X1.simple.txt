@@ -411,6 +411,10 @@ There are two special types of Block which allow the value of one Block to be se
             [B] Picture format constraints
                 Conformance: mandatory
                 [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:0 system" or "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is "Non-constant luminance"; "Non-linear transfer function" is not necessarily conformant.
+                [N] Transfer function
+                    [A] This Specification is intended to be suitable for the delivery of Picture Essence with a "Standard Dynamic Range" (SDR) or a "High Dynamic Range" (HDR).
+                        
+                        ITU-R BT.2020 defines a transfer function that is suitable for SDR content. Several proposals have been made for transfer functions that might be used for HDR content. This Specification does not constrain which transfer function is used.
             [B] AVC Coding
                 Conformance: mandatory
                 [A] The <AVC> bitstream is encoded in accordance with either of: <Constrained AVC intraframe coding> or <Constrained AVC long-GOP coding>.
