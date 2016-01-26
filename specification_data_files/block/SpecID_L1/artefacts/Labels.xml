@@ -4,11 +4,11 @@
     <Entry>
       <Register>Labels</Register>
       <NamespaceName>http://www.smpte-ra.org/reg/400/2012/13/1/amwa/rules</NamespaceName>
-      <Symbol>Blocks_FF_1</Symbol>
+      <Symbol>Blocks_FF_1_WIP</Symbol>
       <UL>urn:smpte:ul:060e2b34.04010101.0d010801.03020000</UL>
       <Kind>LEAF</Kind>
-      <Name>Blocks File Format 1</Name>
-      <Definition>Blocks File Format 1</Definition>
+      <Name>Blocks File Format 1 WIP</Name>
+      <Definition>Blocks File Format 1 (Work in Progress)</Definition>
       <DefiningDocument>AMWA Block URL - TBC</DefiningDocument>
       <IsDeprecated>false</IsDeprecated>
     </Entry>
