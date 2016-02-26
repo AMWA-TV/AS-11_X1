@@ -1558,7 +1558,7 @@ There are two special types of Block which allow the value of one Block to be se
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/reference/SMPTE/ST0377-1/term/Essence/>
             [N] Implementation Notes
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E21/>
-                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of 5.1 or 5.2.
+                [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 5.1 or 5.2.
                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E21/artefacts/1.md>
     [V] File Format Specification Identification Label
         Conformance: mandatory
