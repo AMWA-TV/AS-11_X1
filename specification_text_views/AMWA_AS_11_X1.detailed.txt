@@ -1469,13 +1469,13 @@ There are two special types of Block which allow the value of one Block to be se
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110i/>
                                 [A] The <AVC> bitstream conforms to the "High 10 Intra Profile".
                                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110i/artefacts/1.xml>
-                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01322001`
+                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010a.04010202.01322001`
                                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110i/artefacts/2.md>
                             [B] AVC High 4:2:2 Intra constraints
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122i/>
                                 [A] The <AVC> bitstream conforms to the "High 4:2:2 Intra Profile".
                                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122i/artefacts/1.xml>
-                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01323001`
+                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010a.04010202.01323001`
                                     <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122i/artefacts/2.md>
                         [A] In the <AVC> bitstream the SPS and PPS are repeated after the Access Unit Delimiter at the beginning of every coded frame.
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_I/artefacts/2.xml>
