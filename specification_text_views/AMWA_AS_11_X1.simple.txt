@@ -469,6 +469,15 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] This Specification is intended to be suitable for the delivery of Picture Essence with a "Standard Dynamic Range" (SDR) or a "High Dynamic Range" (HDR).
                         
                         ITU-R BT.2020 defines a transfer function that is suitable for SDR content. Several proposals have been made for transfer functions that might be used for HDR content. This Specification does not constrain which transfer function is used.
+                [N] Chroma siting 
+                    [A] ITU-R Recommendation BT.2020-2 defines a chroma sampling lattice as follows:
+                        
+                        > Orthogonal, line and picture repetitive co-sited with each other.
+                        > The first (top-left) sample is co-sited with the first Y’ samples.
+                        
+                        This differs from the sampling lattice that is conventionally used in SD and HD 4:2:0 systems.
+                        
+                        The use of the 4:2:0 chroma sampling lattice defined by ITU-R Recommendation BT.2020-2 can be signalled in AVC and HEVC by setting the Video Usability Information parameters `chroma_sample_loc_type_top_field` and `chroma_sample_loc_type_bottom_field` both equal to "2".
             [B] AVC Coding
                 Conformance: mandatory
                 [A] The <AVC> bitstream is encoded in accordance with either of: <Constrained AVC intraframe coding> or <Constrained AVC long-GOP coding>.
