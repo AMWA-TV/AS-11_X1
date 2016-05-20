@@ -2175,16 +2175,16 @@ There are two special types of Block which allow the value of one Block to be se
                             <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/>
                             [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
                                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/artefacts/1.md>
-            [B] AVC Video Usability Information constraints
+            [B] AVC Video Usability Information - Video Signal Type
                 Conformance: mandatory
-                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI/>
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_VST/>
                 [A] For every Sequence Parameter Set the <colour_description_present_flag> is present and is set.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI/artefacts/1.md>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_VST/artefacts/1.md>
                     [T] colour_description_present_flag
                         An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the colour_primaries, transfer_characteristics and matrix_coefficients syntax elements are present.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_description_present_flag/>
                 [A] For every Sequence Parameter Set the <video_full_range_flag> is present and is not set.
-                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI/artefacts/2.md>
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_VST/artefacts/2.md>
                     [T] video_full_range_flag
                         An AVC syntax element that indicates the black level and range of the luma and chroma signals.
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/video_full_range_flag/>
@@ -2194,6 +2194,14 @@ There are two special types of Block which allow the value of one Block to be se
                         
                         If a value cannot be found in the table that is appropriate to the content being encoded, then the correct value is `2` "Unspecified".
                         <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E22/artefacts/1.md>
+            [B] AVC Video Usability Information - Timing Info
+                Conformance: mandatory
+                <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/>
+                [A] For every Sequence Parameter Set the <fixed_frame_rate_flag> is present and is set.
+                    <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/artefacts/1.md>
+                    [T] fixed_frame_rate_flag
+                        An AVC syntax element that indicates that constraints apply to the temporal distance between the output times of any two consecutive pictures.
+                        <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/fixed_frame_rate_flag/>
             [B] Picture Essence Descriptor constraints
                 Conformance: mandatory
                 <URL: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/>

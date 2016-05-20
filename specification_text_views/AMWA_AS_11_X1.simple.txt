@@ -502,7 +502,7 @@ There are two special types of Block which allow the value of one Block to be se
                             [A] In the AVC bitstream the SPS and PPS are repeated every ... [TODO]
                         [N] TODO: GOP structure
                             [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
-            [B] AVC Video Usability Information constraints
+            [B] AVC Video Usability Information - Video Signal Type
                 Conformance: mandatory
                 [A] For every Sequence Parameter Set the <colour_description_present_flag> is present and is set.
                 [A] For every Sequence Parameter Set the <video_full_range_flag> is present and is not set.
@@ -510,6 +510,9 @@ There are two special types of Block which allow the value of one Block to be se
                     [A] H.264 includes a table of enumerated values for "Transfer characteristics". This table does not yet include enumerations for transfer characteristics used in relation to higher dynamic range content. Work has begun to extend the table to include these values.
                         
                         If a value cannot be found in the table that is appropriate to the content being encoded, then the correct value is `2` "Unspecified".
+            [B] AVC Video Usability Information - Timing Info
+                Conformance: mandatory
+                [A] For every Sequence Parameter Set the <fixed_frame_rate_flag> is present and is set.
             [B] Picture Essence Descriptor constraints
                 Conformance: mandatory
                 [A] In the Picture Essence Descriptor the (ordinarily optional) "Signal Standard" property is not present or has a value of `0`.
