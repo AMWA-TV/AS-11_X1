@@ -2278,7 +2278,7 @@ An implementation complies with this Specification if it complies with the Compo
             [B] Picture format constraints
                 Conformance: mandatory
                 <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/>
-                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020-2> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:0 system" or "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is "Non-constant luminance Y' C'b C'r"; "Non-linear transfer function" is not necessarily conformant.
+                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020-2> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is "Non-constant luminance Y' C'b C'r"; "Non-linear transfer function" is not necessarily conformant.
                     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/artefacts/2.md>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
@@ -2302,8 +2302,6 @@ An implementation complies with this Specification if it complies with the Compo
                         > The first (top-left) sample is co-sited with the first Y’ samples.
                         
                         This differs from the sampling lattice that is conventionally used in SD and HD 4:2:0 systems.
-                        
-                        The use of the 4:2:0 chroma sampling lattice defined by ITU-R Recommendation BT.2020-2 can be signalled in AVC and HEVC by setting the Video Usability Information parameters `chroma_sample_loc_type_top_field` and `chroma_sample_loc_type_bottom_field` both equal to "2".
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E41/artefacts/1.md>
             [B] AVC Coding
                 Conformance: mandatory
@@ -2315,14 +2313,8 @@ An implementation complies with this Specification if it complies with the Compo
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/AVC/>
                     [B] Constrained AVC intraframe coding
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_I/>
-                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 10 Intra constraints>  when a "4:2:0 system" is used, or with <AVC High 4:2:2 Intra constraints> when a "4:2:2 system" is used.
+                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 Intra constraints>.
                             <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_I/artefacts/1.md>
-                            [B] AVC High 10 Intra constraints
-                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110i/>
-                                [A] The <AVC> bitstream conforms to the "High 10 Intra Profile".
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110i/artefacts/1.md>
-                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010a.04010202.01322001`
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110i/artefacts/2.md>
                             [B] AVC High 4:2:2 Intra constraints
                                 <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122i/>
                                 [A] The <AVC> bitstream conforms to the "High 4:2:2 Intra Profile".
@@ -2333,14 +2325,8 @@ An implementation complies with this Specification if it complies with the Compo
                             <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_I/artefacts/2.md>
                     [B] Constrained AVC long-GOP coding
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/>
-                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 10 constraints>  when a "4:2:0 system" is used, or with <AVC High 4:2:2 constraints> when a "4:2:2 system" is used.
+                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
                             <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/artefacts/1.md>
-                            [B] AVC High 10 constraints
-                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110/>
-                                [A] The <AVC> bitstream conforms to the "High 10 Profile".
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110/artefacts/1.md>
-                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01315001`
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_110/artefacts/2.md>
                             [B] AVC High 4:2:2 constraints
                                 <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/>
                                 [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".

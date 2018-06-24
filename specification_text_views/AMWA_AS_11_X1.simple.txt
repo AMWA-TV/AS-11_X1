@@ -500,7 +500,7 @@ An implementation complies with this Specification if it complies with the Compo
             Conformance: mandatory
             [B] Picture format constraints
                 Conformance: mandatory
-                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020-2> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:0 system" or "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is "Non-constant luminance Y' C'b C'r"; "Non-linear transfer function" is not necessarily conformant.
+                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020-2> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is "Non-constant luminance Y' C'b C'r"; "Non-linear transfer function" is not necessarily conformant.
                 [N] Transfer function
                     [A] This Specification is intended to be suitable for the delivery of Picture Essence with a "Standard Dynamic Range" (SDR) or a "High Dynamic Range" (HDR).
                         
@@ -512,25 +512,17 @@ An implementation complies with this Specification if it complies with the Compo
                         > The first (top-left) sample is co-sited with the first Y’ samples.
                         
                         This differs from the sampling lattice that is conventionally used in SD and HD 4:2:0 systems.
-                        
-                        The use of the 4:2:0 chroma sampling lattice defined by ITU-R Recommendation BT.2020-2 can be signalled in AVC and HEVC by setting the Video Usability Information parameters `chroma_sample_loc_type_top_field` and `chroma_sample_loc_type_bottom_field` both equal to "2".
             [B] AVC Coding
                 Conformance: mandatory
                 [A] The <AVC> bitstream is encoded in accordance with either of: <Constrained AVC intraframe coding> or <Constrained AVC long-GOP coding>.
                     [B] Constrained AVC intraframe coding
-                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 10 Intra constraints>  when a "4:2:0 system" is used, or with <AVC High 4:2:2 Intra constraints> when a "4:2:2 system" is used.
-                            [B] AVC High 10 Intra constraints
-                                [A] The <AVC> bitstream conforms to the "High 10 Intra Profile".
-                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010a.04010202.01322001`
+                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 Intra constraints>.
                             [B] AVC High 4:2:2 Intra constraints
                                 [A] The <AVC> bitstream conforms to the "High 4:2:2 Intra Profile".
                                 [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010a.04010202.01323001`
                         [A] In the <AVC> bitstream the SPS and PPS are repeated after the Access Unit Delimiter at the beginning of every coded frame.
                     [B] Constrained AVC long-GOP coding
-                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 10 constraints>  when a "4:2:0 system" is used, or with <AVC High 4:2:2 constraints> when a "4:2:2 system" is used.
-                            [B] AVC High 10 constraints
-                                [A] The <AVC> bitstream conforms to the "High 10 Profile".
-                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01315001`
+                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
                             [B] AVC High 4:2:2 constraints
                                 [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
                                 [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
