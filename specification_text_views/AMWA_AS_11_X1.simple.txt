@@ -514,13 +514,7 @@ An implementation complies with this Specification if it complies with the Compo
                         This differs from the sampling lattice that is conventionally used in SD and HD 4:2:0 systems.
             [B] AVC Coding
                 Conformance: mandatory
-                [A] The <AVC> bitstream is encoded in accordance with either of: <Constrained AVC intraframe coding> or <Constrained AVC long-GOP coding>.
-                    [B] Constrained AVC intraframe coding
-                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 Intra constraints>.
-                            [B] AVC High 4:2:2 Intra constraints
-                                [A] The <AVC> bitstream conforms to the "High 4:2:2 Intra Profile".
-                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010a.04010202.01323001`
-                        [A] In the <AVC> bitstream the SPS and PPS are repeated after the Access Unit Delimiter at the beginning of every coded frame.
+                [A] The <AVC> bitstream is encoded in accordance with <Constrained AVC long-GOP coding>.
                     [B] Constrained AVC long-GOP coding
                         [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
                             [B] AVC High 4:2:2 constraints

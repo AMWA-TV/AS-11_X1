@@ -2306,23 +2306,11 @@ An implementation complies with this Specification if it complies with the Compo
             [B] AVC Coding
                 Conformance: mandatory
                 <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_0/>
-                [A] The <AVC> bitstream is encoded in accordance with either of: <Constrained AVC intraframe coding> or <Constrained AVC long-GOP coding>.
+                [A] The <AVC> bitstream is encoded in accordance with <Constrained AVC long-GOP coding>.
                     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_0/artefacts/1.md>
                     [T] AVC
                         Advanced Video Coding. A DCT-based video compression format.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/AVC/>
-                    [B] Constrained AVC intraframe coding
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_I/>
-                        [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 Intra constraints>.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_I/artefacts/1.md>
-                            [B] AVC High 4:2:2 Intra constraints
-                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122i/>
-                                [A] The <AVC> bitstream conforms to the "High 4:2:2 Intra Profile".
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122i/artefacts/1.md>
-                                [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010a.04010202.01323001`
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122i/artefacts/2.md>
-                        [A] In the <AVC> bitstream the SPS and PPS are repeated after the Access Unit Delimiter at the beginning of every coded frame.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_I/artefacts/2.md>
                     [B] Constrained AVC long-GOP coding
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/>
                         [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
