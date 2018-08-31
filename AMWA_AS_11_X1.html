@@ -2932,26 +2932,59 @@ The first (top-left) sample is co-sited with the first Y&#8217; or I samples.</p
                                         </li>
                                         <li data-jstree='{"icon":"include/artefact.png"}' id='26e5fd8e508ce355abfe0fb8fef7c1b6'>
                                             <div class='content_container clearfix'>
-<p>In the AVC bitstream the Sequence Parameter Set and Picture Parameter Set are present at least in the first Access Unit of every GOP.</p>
+<p>In the <a class='' data-toggle='tooltip' href='#6ccfc59d4e07d6f39f487679ba9e3efa' title='Advanced Video Coding. A DCT-based video compression format.'>AVC</a> bitstream the Sequence Parameter Set and Picture Parameter Set are present at least in the first Access Unit of every GOP.</p>
                                             </div>
                                         </li>
-                                        <li data-jstree='{"icon":"include/note.png"}' id='d82a877cfc3425f8d2ad76668ed32bb3'>
+                                        <li data-jstree='{"icon":"include/artefact.png"}' id='db7eb7e6f5128e5c9a448a85f9adae3f'>
                                             <div class='content_container clearfix'>
-<b>TODO: GOP structure</b>
+<p>The sequence of encoded Pictures is in accordance with <a class='btn btn-default btn-xs' data-toggle='tooltip' title='BLOCK: Click to show in the tree' href='#b3af8bc946ecc87ec12fb61d40ef83b1'>AVC GOP structure</a>.</p>
                                             </div>
-                                            <ul>
-                                            <li data-jstree='{"icon":"include/cog.png"}' id='d82a877cfc3425f8d2ad76668ed32bb3-info'>
-                                                <p class='info'>Component metadata</p>
+                                        <ul>
+                                            <li data-jstree='{"icon":"include/block.png"}' id='b3af8bc946ecc87ec12fb61d40ef83b1'>
+                                                <div class='content_container clearfix'>
+<b>AVC GOP structure</b>
+                                                </div>
                                                 <ul>
-                                                <li data-jstree='{"icon":"hidden", "disabled":"true"}' id='d82a877cfc3425f8d2ad76668ed32bb3-info-ID'>
-                                                    <p class='info'><b>ID:</b> <a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/</a></p>
+                                                <li data-jstree='{"icon":"include/cog.png"}' id='b3af8bc946ecc87ec12fb61d40ef83b1-info'>
+                                                    <p class='info'>Component metadata</p>
+                                                    <ul>
+                                                    <li data-jstree='{"icon":"hidden", "disabled":"true"}' id='b3af8bc946ecc87ec12fb61d40ef83b1-info-ID'>
+                                                        <p class='info'><b>ID:</b> <a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_GOP/</a></p>
+                                                    </li>
+                                                    </ul>
+                                                </li>
+                                                <li data-jstree='{"icon":"include/artefact.png"}' id='600e978172c52b8cb63f0e43c8d751ba'>
+                                                    <div class='content_container clearfix'>
+<p>The duration of each GOP structure is 2 seconds or less.</p>
+                                                    </div>
+                                                </li>
+                                                <li data-jstree='{"icon":"include/note.png"}' id='f3345223307040288c93a4ba57a11560'>
+                                                    <div class='content_container clearfix'>
+<b>Efficient coding techniques</b>
+                                                    </div>
+                                                    <ul>
+                                                    <li data-jstree='{"icon":"include/cog.png"}' id='f3345223307040288c93a4ba57a11560-info'>
+                                                        <p class='info'>Component metadata</p>
+                                                        <ul>
+                                                        <li data-jstree='{"icon":"hidden", "disabled":"true"}' id='f3345223307040288c93a4ba57a11560-info-ID'>
+                                                            <p class='info'><b>ID:</b> <a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/note/avc_efficient_gops/</a></p>
+                                                        </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li data-jstree='{"icon":"include/noteartefact.png"}' id='d76ed1ae21b0aded048a3083d861db59'>
+                                                        <div class='content_container clearfix'>
+<p>The following techniques are recommended to maximise coding efficiency:</p>
+
+<ul>
+<li>Adaptive GOPs</li>
+<li>Minimum GOP length 0.5 seconds where no adaptation occurs</li>
+<li>Hierarchical B-frames</li>
+</ul>
+                                                        </div>
+                                                    </li>
+                                                    </ul>
                                                 </li>
                                                 </ul>
-                                            </li>
-                                            <li data-jstree='{"icon":"include/noteartefact.png"}' id='57bc76c4f2a8b7b077ad2ae435db4d95'>
-                                                <div class='content_container clearfix'>
-<p>In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.</p>
-                                                </div>
                                             </li>
                                             </ul>
                                         </li>

@@ -2343,12 +2343,22 @@ An implementation complies with this Specification if it complies with the Compo
                                     <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_122/artefacts/1.md>
                                 [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
                                     <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_122/artefacts/2.md>
-                        [A] In the AVC bitstream the Sequence Parameter Set and Picture Parameter Set are present at least in the first Access Unit of every GOP.
+                        [A] In the <AVC> bitstream the Sequence Parameter Set and Picture Parameter Set are present at least in the first Access Unit of every GOP.
                             <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/artefacts/ps.md>
-                        [N] TODO: GOP structure
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/>
-                            [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
-                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T2/artefacts/1.md>
+                        [A] The sequence of encoded Pictures is in accordance with <AVC GOP structure>.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/artefacts/gop.md>
+                            [B] AVC GOP structure
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_GOP/>
+                                [A] The duration of each GOP structure is 2 seconds or less.
+                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_GOP/artefacts/max.md>
+                                [N] Efficient coding techniques
+                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/avc_efficient_gops/>
+                                    [A] The following techniques are recommended to maximise coding efficiency:
+                                        
+                                        * Adaptive GOPs
+                                        * Minimum GOP length 0.5 seconds where no adaptation occurs
+                                        * Hierarchical B-frames
+                                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/avc_efficient_gops/artefacts/1.md>
             [B] AVC Video Usability Information - Video Signal Type
                 Conformance: mandatory
                 <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_VST/>
