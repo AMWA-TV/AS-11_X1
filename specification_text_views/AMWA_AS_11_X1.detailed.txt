@@ -2275,10 +2275,10 @@ An implementation complies with this Specification if it complies with the Compo
         [B] Picture Essence Bitstream and Mapping Constraints
             Conformance: mandatory
             <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PEC_0/>
-            [B] Picture format constraints
+            [B] Picture Format constraints
                 Conformance: mandatory
                 <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/>
-                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2020-2> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is "Non-constant luminance Y' C'b C'r"; "Non-linear transfer function" is not necessarily conformant.
+                [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2100-1> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is "Non-constant luminance Y' C'b C'r".
                     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/artefacts/2.md>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
@@ -2286,20 +2286,42 @@ An implementation complies with this Specification if it complies with the Compo
                         [T] Essence
                             A bitstream comprising picture, sound or data.
                             <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
-                    [R] ITU-R Recommendation ITU-R BT.2020-2
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20R-Rec-BT.2020-2/>
-                [N] Transfer function
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E24/>
-                    [A] This Specification is intended to be suitable for the delivery of Picture Essence with a "Standard Dynamic Range" (SDR) or a "High Dynamic Range" (HDR).
-                        
-                        ITU-R BT.2020 defines a transfer function that is suitable for SDR content. Several proposals have been made for transfer functions that might be used for HDR content. This Specification does not constrain which transfer function is used.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E24/artefacts/1.md>
+                    [R] ITU-R Recommendation ITU-R BT.2100-1
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20R-Rec-BT.2100-1/>
+                [A] The transfer function is chosen for delivery of Picture Essence with a "<High Dynamic Range>" or a "<Standard Dynamic Range>".
+                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/artefacts/3.md>
+                    [B] High Dynamic Range
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/HDR/>
+                        [A] The transfer function of the <Picture Essence> conforms to one of those in <ITU-R Recommendation ITU-R BT.2100-1>.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/HDR/artefacts/1.md>
+                            [T] Picture Essence
+                                A type of <Essence> containing predominantly picture data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                                [T] Essence
+                                    A bitstream comprising picture, sound or data.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            [R] ITU-R Recommendation ITU-R BT.2100-1
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20R-Rec-BT.2100-1/>
+                        [A] If the "Hybrid Log-Gamma" system is chosen, the "narrow range" signal representation is used.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/HDR/artefacts/2.md>
+                    [B] Standard Dynamic Range
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SDR/>
+                        [A] The transfer function of the <Picture Essence> conforms to that in <ITU-R Recommendation ITU-R BT.2020-2>.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SDR/artefacts/1.md>
+                            [T] Picture Essence
+                                A type of <Essence> containing predominantly picture data.
+                                <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
+                                [T] Essence
+                                    A bitstream comprising picture, sound or data.
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
+                            [R] ITU-R Recommendation ITU-R BT.2020-2
+                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20R-Rec-BT.2020-2/>
                 [N] Chroma siting 
                     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E41/>
-                    [A] ITU-R Recommendation BT.2020-2 defines a chroma sampling lattice as follows:
+                    [A] ITU-R Recommendation BT.2100-1 defines a chroma sampling lattice as follows:
                         
                         > Orthogonal, line and picture repetitive co-sited with each other.
-                        > The first (top-left) sample is co-sited with the first Y’ samples.
+                        > The first (top-left) sample is co-sited with the first Y’ or I samples.
                         
                         This differs from the sampling lattice that is conventionally used in SD and HD 4:2:0 systems.
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E41/artefacts/1.md>
