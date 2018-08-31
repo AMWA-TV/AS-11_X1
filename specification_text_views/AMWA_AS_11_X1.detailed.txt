@@ -2357,8 +2357,17 @@ An implementation complies with this Specification if it complies with the Compo
                 [A] For every Sequence Parameter Set the <colour_description_present_flag> is present and is set.
                     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_VST/artefacts/1.md>
                     [T] colour_description_present_flag
-                        An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the colour_primaries, transfer_characteristics and matrix_coefficients syntax elements are present.
+                        An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the <colour_primaries>, <transfer_characteristics> and <matrix_coefficients> syntax elements are present.
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_description_present_flag/>
+                        [T] colour_primaries
+                            An AVC syntax element that indicates the chromaticity co-ordinates of the encoding.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_primaries/>
+                        [T] transfer_characteristics
+                            An AVC syntax element that indicates the relationship between the scene or display brightness and the level of the luma and chroma signals.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/transfer_characteristics/>
+                        [T] matrix_coefficients
+                            An AVC syntax element that indicates the matrix coefficients used to derive the luma and chroma signals from the colour primary signals.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/matrix_coefficients/>
                 [A] For every Sequence Parameter Set the <video_full_range_flag> is present and is not set.
                     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_VST/artefacts/2.md>
                     [T] video_full_range_flag

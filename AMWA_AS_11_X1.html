@@ -2991,7 +2991,7 @@ The first (top-left) sample is co-sited with the first Y&#8217; or I samples.</p
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='86e9c2d3f5ddbc991644f9a65b4b61e0'>
                                     <div class='content_container clearfix'>
-<p>For every Sequence Parameter Set the <a class='' data-toggle='tooltip' href='#abc701b728547d3416908a5bfad335f1' title='An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the colour_primaries, transfer_characteristics and matrix_coefficients syntax elements are present.'>colour_description_present_flag</a> is present and is set.</p>
+<p>For every Sequence Parameter Set the <a class='' data-toggle='tooltip' href='#abc701b728547d3416908a5bfad335f1' title='An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the &lt;colour_primaries&gt;, &lt;transfer_characteristics&gt; and &lt;matrix_coefficients&gt; syntax elements are present.'>colour_description_present_flag</a> is present and is set.</p>
                                     </div>
                                 </li>
                                 <li data-jstree='{"icon":"include/artefact.png"}' id='5269e1964bb350eb9139a60495361c0b'>
@@ -3897,10 +3897,25 @@ The first (top-left) sample is co-sited with the first Y&#8217; or I samples.</p
 
                     <tr id='abc701b728547d3416908a5bfad335f1'>
                     <td><b>colour_description_present_flag</b></td>
-                    <td><p>An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the colour_primaries, transfer_characteristics and matrix_coefficients syntax elements are present.</p>
+                    <td><p>An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the <a class='' data-toggle='tooltip' href='#5f9f6fbfe7118af4933ba660b12a28a2' title='An AVC syntax element that indicates the chromaticity co-ordinates of the encoding.'>colour_primaries</a>, <a class='' data-toggle='tooltip' href='#f606ab1da012552458ea72e0857ffb35' title='An AVC syntax element that indicates the relationship between the scene or display brightness and the level of the luma and chroma signals.'>transfer_characteristics</a> and <a class='' data-toggle='tooltip' href='#08bfe723b519a7f56a310757365036a2' title='An AVC syntax element that indicates the matrix coefficients used to derive the luma and chroma signals from the colour primary signals.'>matrix_coefficients</a> syntax elements are present.</p>
 
                              
                         <div class='info tInfo'><b>ID: </b><a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_description_present_flag/</a></div>
+                        
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#5010eab61d25ace10a6d70e5dcde8f01' title='Advanced Video Coding for Generic Audio-Visual Services'>ITU-T Rec H.264</a></div>
+                        
+                    
+                    </td></tr>
+                
+
+                    
+
+                    <tr id='5f9f6fbfe7118af4933ba660b12a28a2'>
+                    <td><b>colour_primaries</b></td>
+                    <td><p>An AVC syntax element that indicates the chromaticity co-ordinates of the encoding.</p>
+
+                             
+                        <div class='info tInfo'><b>ID: </b><a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_primaries/</a></div>
                         
                             <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#5010eab61d25ace10a6d70e5dcde8f01' title='Advanced Video Coding for Generic Audio-Visual Services'>ITU-T Rec H.264</a></div>
                         
@@ -4298,6 +4313,21 @@ The first (top-left) sample is co-sited with the first Y&#8217; or I samples.</p
 
                     
 
+                    <tr id='08bfe723b519a7f56a310757365036a2'>
+                    <td><b>matrix_coefficients</b></td>
+                    <td><p>An AVC syntax element that indicates the matrix coefficients used to derive the luma and chroma signals from the colour primary signals.</p>
+
+                             
+                        <div class='info tInfo'><b>ID: </b><a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/term/matrix_coefficients/</a></div>
+                        
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#5010eab61d25ace10a6d70e5dcde8f01' title='Advanced Video Coding for Generic Audio-Visual Services'>ITU-T Rec H.264</a></div>
+                        
+                    
+                    </td></tr>
+                
+
+                    
+
                     <tr id='18e9d73d6a965915ef41f5d67c907d16'>
                     <td><b>MCA Labeling Present</b></td>
                     <td><p>A property of an Audio Layout Mode</p>
@@ -4664,6 +4694,21 @@ The first (top-left) sample is co-sited with the first Y&#8217; or I samples.</p
                         <div class='info tInfo'><b>ID: </b><a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://www.amwa.tv/projects/rules/01/term/Track/</a></div>
                         
                             <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#2ac1cb7a194dfe7fe8269a9760dcd495' title='Material Exchange Format (MXF) — File Format Specification'>SMPTE ST 377-1</a></div>
+                        
+                    
+                    </td></tr>
+                
+
+                    
+
+                    <tr id='f606ab1da012552458ea72e0857ffb35'>
+                    <td><b>transfer_characteristics</b></td>
+                    <td><p>An AVC syntax element that indicates the relationship between the scene or display brightness and the level of the luma and chroma signals.</p>
+
+                             
+                        <div class='info tInfo'><b>ID: </b><a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/term/transfer_characteristics/</a></div>
+                        
+                            <div class='info tInfo_permanent'><b>Defined By: </b><a class='' data-toggle='tooltip' href='#5010eab61d25ace10a6d70e5dcde8f01' title='Advanced Video Coding for Generic Audio-Visual Services'>ITU-T Rec H.264</a></div>
                         
                     
                     </td></tr>
