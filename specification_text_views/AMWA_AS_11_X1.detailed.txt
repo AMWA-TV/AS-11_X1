@@ -2338,11 +2338,11 @@ An implementation complies with this Specification if it complies with the Compo
                         [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
                             <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/artefacts/1.md>
                             [B] AVC High 4:2:2 constraints
-                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_122/>
                                 [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/1.md>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_122/artefacts/1.md>
                                 [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_122/artefacts/2.md>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_122/artefacts/2.md>
                         [N] TODO: Repetition of parameter sets
                             <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/T1/>
                             [A] In the AVC bitstream the SPS and PPS are repeated every ... [TODO]
