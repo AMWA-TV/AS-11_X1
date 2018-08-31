@@ -2373,12 +2373,6 @@ An implementation complies with this Specification if it complies with the Compo
                     [T] video_full_range_flag
                         An AVC syntax element that indicates the black level and range of the luma and chroma signals.
                         <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/video_full_range_flag/>
-                [N] Implementation Notes
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E22/>
-                    [A] H.264 includes a table of enumerated values for "Transfer characteristics". This table does not yet include enumerations for transfer characteristics used in relation to higher dynamic range content. Work has begun to extend the table to include these values.
-                        
-                        If a value cannot be found in the table that is appropriate to the content being encoded, then the correct value is `2` "Unspecified".
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E22/artefacts/1.md>
             [B] AVC Video Usability Information - Timing Info
                 Conformance: mandatory
                 <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/>
@@ -2420,6 +2414,36 @@ An implementation complies with this Specification if it complies with the Compo
                 <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E21/>
                 [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 5.1 or 5.2.
                     <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E21/artefacts/1.md>
+                [A] <ITU-T Rec H.264-201704> contains tables of enumerated values for the Video Usability Information paramaters mandated by the inclusion of the <colour_description_present_flag>.
+                    The constraints expressed here for the picture format result in the following values for these parameters:
+                    
+                    * <colour_primaries>: `9`
+                    * <transfer_characteristics>: `16` for "Perceptual Quantization" High Dynamic Range, `18` for "Hybrid Log-Gamma" High Dynamic Range and `14` for Standard Dynamic Range
+                    * <matrix_coefficients>: `9`
+                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E21/artefacts/avc_vui.md>
+                    [R] ITU-T Rec H.264-201704
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20T-Rec-H.264-201704/>
+                    [T] colour_description_present_flag
+                        An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the <colour_primaries>, <transfer_characteristics> and <matrix_coefficients> syntax elements are present.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_description_present_flag/>
+                        [T] colour_primaries
+                            An AVC syntax element that indicates the chromaticity co-ordinates of the encoding.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_primaries/>
+                        [T] transfer_characteristics
+                            An AVC syntax element that indicates the relationship between the scene or display brightness and the level of the luma and chroma signals.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/transfer_characteristics/>
+                        [T] matrix_coefficients
+                            An AVC syntax element that indicates the matrix coefficients used to derive the luma and chroma signals from the colour primary signals.
+                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/matrix_coefficients/>
+                    [T] colour_primaries
+                        An AVC syntax element that indicates the chromaticity co-ordinates of the encoding.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_primaries/>
+                    [T] transfer_characteristics
+                        An AVC syntax element that indicates the relationship between the scene or display brightness and the level of the luma and chroma signals.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/transfer_characteristics/>
+                    [T] matrix_coefficients
+                        An AVC syntax element that indicates the matrix coefficients used to derive the luma and chroma signals from the colour primary signals.
+                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/matrix_coefficients/>
     [V] File Format Specification Identification Label
         Conformance: mandatory
         Associated Parameter Key: "File Format Specification Identification Label" (Component ID: http://www.amwa.tv/projects/rules/01/block/param3/)

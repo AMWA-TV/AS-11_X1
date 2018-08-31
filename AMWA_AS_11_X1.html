@@ -2999,28 +2999,6 @@ The first (top-left) sample is co-sited with the first Y&#8217; or I samples.</p
 <p>For every Sequence Parameter Set the <a class='' data-toggle='tooltip' href='#29a1fd0fe9f1875c21a6f1b36072ee04' title='An AVC syntax element that indicates the black level and range of the luma and chroma signals.'>video_full_range_flag</a> is present and is not set.</p>
                                     </div>
                                 </li>
-                                <li data-jstree='{"icon":"include/note.png"}' id='9f389aa0a54625d5cbd32665af4469d5'>
-                                    <div class='content_container clearfix'>
-<b>Implementation Notes</b>
-                                    </div>
-                                    <ul>
-                                    <li data-jstree='{"icon":"include/cog.png"}' id='9f389aa0a54625d5cbd32665af4469d5-info'>
-                                        <p class='info'>Component metadata</p>
-                                        <ul>
-                                        <li data-jstree='{"icon":"hidden", "disabled":"true"}' id='9f389aa0a54625d5cbd32665af4469d5-info-ID'>
-                                            <p class='info'><b>ID:</b> <a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E22/</a></p>
-                                        </li>
-                                        </ul>
-                                    </li>
-                                    <li data-jstree='{"icon":"include/noteartefact.png"}' id='67e52f4ac6770161042176f48fd53187'>
-                                        <div class='content_container clearfix'>
-<p>H.264 includes a table of enumerated values for "Transfer characteristics". This table does not yet include enumerations for transfer characteristics used in relation to higher dynamic range content. Work has begun to extend the table to include these values.</p>
-
-<p>If a value cannot be found in the table that is appropriate to the content being encoded, then the correct value is <code>2</code> "Unspecified".</p>
-                                        </div>
-                                    </li>
-                                    </ul>
-                                </li>
                                 </ul>
                             </li>
                             <li data-jstree='{"icon":"include/block.png"}' id='2d7bc58b77a4d173f9781b36c5d16fac'>
@@ -3134,6 +3112,18 @@ The first (top-left) sample is co-sited with the first Y&#8217; or I samples.</p
                                 <li data-jstree='{"icon":"include/noteartefact.png"}' id='20e0b787202437ef7f9c29fb5f30ca34'>
                                     <div class='content_container clearfix'>
 <p>The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 5.1 or 5.2.</p>
+                                    </div>
+                                </li>
+                                <li data-jstree='{"icon":"include/noteartefact.png"}' id='39ec3cca2185f9480de806c67e774ebb'>
+                                    <div class='content_container clearfix'>
+<p><a class='' data-toggle='tooltip' href='#acce5cb1fb57743a46151e84d2f0cbe2' title='Advanced Video Coding for Generic Audio-Visual Services'>ITU-T Rec H.264-201704</a> contains tables of enumerated values for the Video Usability Information paramaters mandated by the inclusion of the <a class='' data-toggle='tooltip' href='#abc701b728547d3416908a5bfad335f1' title='An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the &lt;colour_primaries&gt;, &lt;transfer_characteristics&gt; and &lt;matrix_coefficients&gt; syntax elements are present.'>colour_description_present_flag</a>.
+The constraints expressed here for the picture format result in the following values for these parameters:</p>
+
+<ul>
+<li><a class='' data-toggle='tooltip' href='#5f9f6fbfe7118af4933ba660b12a28a2' title='An AVC syntax element that indicates the chromaticity co-ordinates of the encoding.'>colour_primaries</a>: <code>9</code></li>
+<li><a class='' data-toggle='tooltip' href='#f606ab1da012552458ea72e0857ffb35' title='An AVC syntax element that indicates the relationship between the scene or display brightness and the level of the luma and chroma signals.'>transfer_characteristics</a>: <code>16</code> for "Perceptual Quantization" High Dynamic Range, <code>18</code> for "Hybrid Log-Gamma" High Dynamic Range and <code>14</code> for Standard Dynamic Range</li>
+<li><a class='' data-toggle='tooltip' href='#08bfe723b519a7f56a310757365036a2' title='An AVC syntax element that indicates the matrix coefficients used to derive the luma and chroma signals from the colour primary signals.'>matrix_coefficients</a>: <code>9</code></li>
+</ul>
                                     </div>
                                 </li>
                                 </ul>
@@ -4844,6 +4834,22 @@ The first (top-left) sample is co-sited with the first Y&#8217; or I samples.</p
                     
 
                     <br>
+
+                    
+
+                        <table class="table table-bordered table-condensed definition-table">
+                        <thead><tr id='acce5cb1fb57743a46151e84d2f0cbe2'><th>ITU-T Rec H.264-201704</th></tr></thead>
+                        <tbody>
+
+                            <tr><td>
+                            Advanced Video Coding for Generic Audio-Visual Services<br>
+                            <a href='https://www.itu.int/rec/T-REC-H.264' target='_blank'>https://www.itu.int/rec/T-REC-H.264</a>
+                                
+                                <div class='info rInfo'><b>ID: </b><a class='' data-toggle='tooltip' href='#component-id-message' title='ID (identity) of this Rules-based Specification Component: Click to read an explanation'>http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20T-Rec-H.264-201704/</a></div>
+                            
+                            </td></tr>
+
+                        </tbody></table>
 
                     
                     </td></tr>

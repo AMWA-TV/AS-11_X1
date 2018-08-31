@@ -530,10 +530,6 @@ An implementation complies with this Specification if it complies with the Compo
                 Conformance: mandatory
                 [A] For every Sequence Parameter Set the <colour_description_present_flag> is present and is set.
                 [A] For every Sequence Parameter Set the <video_full_range_flag> is present and is not set.
-                [N] Implementation Notes
-                    [A] H.264 includes a table of enumerated values for "Transfer characteristics". This table does not yet include enumerations for transfer characteristics used in relation to higher dynamic range content. Work has begun to extend the table to include these values.
-                        
-                        If a value cannot be found in the table that is appropriate to the content being encoded, then the correct value is `2` "Unspecified".
             [B] AVC Video Usability Information - Timing Info
                 Conformance: mandatory
                 [A] For every Sequence Parameter Set the <fixed_frame_rate_flag> is present and is set.
@@ -550,6 +546,12 @@ An implementation complies with this Specification if it complies with the Compo
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "ActiveFormatDescriptor" property is not present.
             [N] Implementation Notes
                 [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 5.1 or 5.2.
+                [A] <ITU-T Rec H.264-201704> contains tables of enumerated values for the Video Usability Information paramaters mandated by the inclusion of the <colour_description_present_flag>.
+                    The constraints expressed here for the picture format result in the following values for these parameters:
+                    
+                    * <colour_primaries>: `9`
+                    * <transfer_characteristics>: `16` for "Perceptual Quantization" High Dynamic Range, `18` for "Hybrid Log-Gamma" High Dynamic Range and `14` for Standard Dynamic Range
+                    * <matrix_coefficients>: `9`
     [V] File Format Specification Identification Label
         Conformance: mandatory
         Associated Parameter Key: "File Format Specification Identification Label" (Component ID: http://www.amwa.tv/projects/rules/01/block/param3/)
