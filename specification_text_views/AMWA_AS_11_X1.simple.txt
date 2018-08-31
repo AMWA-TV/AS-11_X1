@@ -522,7 +522,7 @@ An implementation complies with this Specification if it complies with the Compo
                             [B] AVC High 4:2:2 constraints
                                 [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
                                 [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
-                        [A] In the AVC bitstream the Sequence Parameter Set and Picture Parameter Set are repeated every IDR Picture.
+                        [A] In the AVC bitstream the Sequence Parameter Set and Picture Parameter Set are present at least in the first Access Unit of every GOP.
                         [N] TODO: GOP structure
                             [A] In the AVC bitstream there are between 1 and [TODO] non-IDR Pictures between one IDR Picture and the next IDR Picture.
             [B] AVC Video Usability Information - Video Signal Type
