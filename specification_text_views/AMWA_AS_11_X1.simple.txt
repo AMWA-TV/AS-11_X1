@@ -535,12 +535,13 @@ An implementation complies with this Specification if it complies with the Compo
                 [A] For every Sequence Parameter Set the <fixed_frame_rate_flag> is present and is set.
             [B] Picture Essence Descriptor constraints
                 Conformance: mandatory
-                [A] In the Picture Essence Descriptor the (ordinarily optional) "Signal Standard" property is not present or has a value of `0`.
-                [A] In the Picture Essence Descriptor the (ordinarily optional) "Transfer Characteristics" property is present.
-                [A] In the Picture Essence Descriptor the (ordinarily optional) "Color Primaries" property is present.
-                [A] In the Picture Essence Descriptor the (ordinarily optional) "Coding Equations" property is present.
-                [N] Implementation Notes
-                    [A] The SMPTE Metadata Registers may not yet contain all of the Labels required to accurately describe the Picture Essence that this Specification is intended to support. Work has begun to add these Labels to the SMPTE Metadata Registers.
+                [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Signal Standard" property is not present or has a value of `0`.
+                [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Transfer Characteristics" property is present.
+                [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Color Primaries" property is present.
+                [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Coding Equations" property is present.
+                [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Black Ref Level" property is present.
+                [A] In the <Picture Essence Descriptor> the (ordinarily optional) "White Ref Level" property is present.
+                [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Color Range" property is present.
             [B] AFD Presence
                 Conformance: mandatory
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "ActiveFormatDescriptor" property is not present.
@@ -552,6 +553,14 @@ An implementation complies with this Specification if it complies with the Compo
                     * <colour_primaries>: `9`
                     * <transfer_characteristics>: `16` for "Perceptual Quantization" High Dynamic Range, `18` for "Hybrid Log-Gamma" High Dynamic Range and `14` for Standard Dynamic Range
                     * <matrix_coefficients>: `9`
+                [A] The constraints expressed here for the picture format result in the following values for properties of the <Picture Essence Descriptor>:
+                    
+                    * "Transfer Characteristics": `060e2b34.0401010d.04010101.010a0000` for "Perceptual Quantization" High Dynamic Range, `060e2b34.0401010d.04010101.010b0000` for "Hybrid Log-Gamma" High Dynamic Range and `060e2b34.0401010e.04010101.01090000` for Standard Dynamic Range
+                    * "Color Primaries": `060e2b34.0401010d.04010101.03040000`
+                    * "Coding Equations": `060e2b34.0401010d.04010101.02060000`
+                    * "Black Ref Level": `64`
+                    * "White Ref Level": `940`
+                    * "Color Range": `897`
     [V] File Format Specification Identification Label
         Conformance: mandatory
         Associated Parameter Key: "File Format Specification Identification Label" (Component ID: http://www.amwa.tv/projects/rules/01/block/param3/)
