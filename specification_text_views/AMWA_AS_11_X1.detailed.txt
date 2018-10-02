@@ -1,4 +1,4 @@
-# **[Work In Progress]** AS-11 X1 (MXF Program Contribution - DPP UHD)
+# **[Specification]** AS-11 X1 (MXF Program Contribution - DPP UHD)
 
 |*Important links*| |
 |-----------------|-|
@@ -64,7 +64,7 @@ An implementation complies with this Specification if it complies with the Compo
 # The Specification Blocks Tree
 
 [B] File Format with Parameter Values
-    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/FF_1/>
+    <Component ID: http://www.amwa.tv/projects/rules/01/block/FF_1/>
     [B] File Format with Parameter Keys
         Conformance: mandatory
         <Component ID: http://www.amwa.tv/projects/rules/01/block/FF_0_r003/>
@@ -546,7 +546,7 @@ An implementation complies with this Specification if it complies with the Compo
                         <Component ID: http://www.amwa.tv/projects/rules/01/note/E10/artefacts/1.md>
             [K] Picture Essence Constraints
                 Conformance: mandatory
-                Associated Parameter Value: "Picture Essence Constraints" (Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_4/)
+                Associated Parameter Value: "Picture Essence Constraints" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_4/)
                 <Component ID: http://www.amwa.tv/projects/rules/01/block/param2/>
                 [A] Specifies further constraints on the "Picture Essence" and its mapping to the MXF file.
                     <Component ID: http://www.amwa.tv/projects/rules/01/block/param2/artefacts/1.md>
@@ -1103,7 +1103,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 A property of an Audio Layout Mode
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Default%20Audio%20Layout/>
                     [K] Extra Audio Layout Modes
-                        Associated Parameter Value: "Extra Audio Layout Modes" (Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_9/)
+                        Associated Parameter Value: "Extra Audio Layout Modes" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_9/)
                         <Component ID: http://www.amwa.tv/projects/rules/01/block/param1/>
                 [A] If <Constrained Multichannel Audio Labeling Framework> is used then any device or system that reads, writes or otherwise processes the file supports <Labels for use in Multichannel Audio Labeling Framework>.
                     <Component ID: http://www.amwa.tv/projects/rules/01/block/AL_r001/artefacts/5.md>
@@ -1976,7 +1976,7 @@ An implementation complies with this Specification if it complies with the Compo
                         [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_L/artefacts/Labels.xml
                             <Component ID: http://www.amwa.tv/projects/rules/01/note/Specification_Identification_L/artefacts/Labels.xml>
                 [K] File Format Specification Identification Label
-                    Associated Parameter Value: "File Format Specification Identification Label" (Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_3/)
+                    Associated Parameter Value: "File Format Specification Identification Label" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_3/)
                     <Component ID: http://www.amwa.tv/projects/rules/01/block/param3/>
         [B] Dolby Audio Metadata
             Conformance: optional
@@ -2271,15 +2271,15 @@ An implementation complies with this Specification if it complies with the Compo
     [V] Picture Essence Constraints
         Conformance: mandatory
         Associated Parameter Key: "Picture Essence Constraints" (Component ID: http://www.amwa.tv/projects/rules/01/block/param2/)
-        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_4/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_4/>
         [B] Picture Essence Bitstream and Mapping Constraints
             Conformance: mandatory
-            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PEC_0/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/PEC_0/>
             [B] Picture Format constraints
                 Conformance: mandatory
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/PE_A/>
                 [A] The decoded <Picture Essence> conforms to <ITU-R Recommendation ITU-R BT.2100-1> where: "Frame frequency (Hz)" is "25" or "50"; "Pixel count" is "3840 x 2160"; the "Sampling lattice" uses a "4:2:2 system"; "Coding format" is "10 bits per component"; "Signal format" is "Non-constant luminance Y' C'b C'r".
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/artefacts/2.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/PE_A/artefacts/2.md>
                     [T] Picture Essence
                         A type of <Essence> containing predominantly picture data.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
@@ -2287,13 +2287,13 @@ An implementation complies with this Specification if it complies with the Compo
                             A bitstream comprising picture, sound or data.
                             <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                     [R] ITU-R Recommendation ITU-R BT.2100-1
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20R-Rec-BT.2100-1/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/ITU%20R-Rec-BT.2100-1/>
                 [A] The transfer function is chosen for delivery of Picture Essence with a "<High Dynamic Range>" or a "<Standard Dynamic Range>".
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PE_A/artefacts/3.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/PE_A/artefacts/3.md>
                     [B] High Dynamic Range
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/HDR/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/HDR/>
                         [A] The transfer function of the <Picture Essence> conforms to one of those in <ITU-R Recommendation ITU-R BT.2100-1>.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/HDR/artefacts/1.md>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/HDR/artefacts/1.md>
                             [T] Picture Essence
                                 A type of <Essence> containing predominantly picture data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
@@ -2301,13 +2301,13 @@ An implementation complies with this Specification if it complies with the Compo
                                     A bitstream comprising picture, sound or data.
                                     <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                             [R] ITU-R Recommendation ITU-R BT.2100-1
-                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20R-Rec-BT.2100-1/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/ITU%20R-Rec-BT.2100-1/>
                         [A] If the "Hybrid Log-Gamma" system is chosen, the "narrow range" signal representation is used.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/HDR/artefacts/2.md>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/HDR/artefacts/2.md>
                     [B] Standard Dynamic Range
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SDR/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/SDR/>
                         [A] The transfer function of the <Picture Essence> conforms to that in <ITU-R Recommendation ITU-R BT.2020-2>.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SDR/artefacts/1.md>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/SDR/artefacts/1.md>
                             [T] Picture Essence
                                 A type of <Essence> containing predominantly picture data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence/>
@@ -2315,28 +2315,28 @@ An implementation complies with this Specification if it complies with the Compo
                                     A bitstream comprising picture, sound or data.
                                     <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                             [R] ITU-R Recommendation ITU-R BT.2020-2
-                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20R-Rec-BT.2020-2/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/ITU%20R-Rec-BT.2020-2/>
                 [N] Chroma siting 
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E41/>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E41/>
                     [A] ITU-R Recommendation BT.2100-1 defines a chroma sampling lattice as follows:
                         
                         > Orthogonal, line and picture repetitive co-sited with each other.
                         > The first (top-left) sample is co-sited with the first Y’ or I samples.
                         
                         This differs from the sampling lattice that is conventionally used in SD and HD 4:2:0 systems.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E41/artefacts/1.md>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/note/E41/artefacts/1.md>
             [B] AVC Coding
                 Conformance: mandatory
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_0/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_0/>
                 [A] The <AVC> bitstream is encoded in accordance with <Constrained AVC long-GOP coding>.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_0/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_0/artefacts/1.md>
                     [T] AVC
                         Advanced Video Coding. A DCT-based video compression format.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/AVC/>
                     [B] Constrained AVC long-GOP coding
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_L/>
                         [A] The <AVC> bitstream is encoded in accordance with <AVC High 4:2:2 constraints>.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/artefacts/1.md>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_L/artefacts/1.md>
                             [B] AVC High 4:2:2 constraints
                                 <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_122/>
                                 [A] The <AVC> bitstream conforms to the "High 4:2:2 Profile".
@@ -2344,56 +2344,56 @@ An implementation complies with this Specification if it complies with the Compo
                                 [A] In the Picture Essence Descriptor the (ordinarily optional) "Picture Essence Coding" property is present and has the value: `060e2b34.0401010d.04010202.01316001`
                                     <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_122/artefacts/2.md>
                         [A] In the <AVC> bitstream the Sequence Parameter Set and Picture Parameter Set are present at least in the first Access Unit of every GOP.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/artefacts/ps.md>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_L/artefacts/ps.md>
                         [A] The sequence of encoded Pictures is in accordance with <AVC GOP structure>.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_L/artefacts/gop.md>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_L/artefacts/gop.md>
                             [B] AVC GOP structure
-                                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_GOP/>
+                                <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_GOP/>
                                 [A] The duration of each GOP structure is 2 seconds or less.
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_GOP/artefacts/max.md>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_GOP/artefacts/max.md>
                                 [N] Efficient coding techniques
-                                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/avc_efficient_gops/>
+                                    <Component ID: http://www.amwa.tv/projects/rules/01/note/avc_efficient_gops/>
                                     [A] The following techniques are recommended to maximise coding efficiency:
                                         
                                         * Adaptive GOPs
                                         * Minimum GOP length 0.5 seconds where no adaptation occurs
                                         * Hierarchical B-frames
-                                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/avc_efficient_gops/artefacts/1.md>
+                                        <Component ID: http://www.amwa.tv/projects/rules/01/note/avc_efficient_gops/artefacts/1.md>
             [B] AVC Video Usability Information - Video Signal Type
                 Conformance: mandatory
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_VST/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_VUI_VST/>
                 [A] For every Sequence Parameter Set the <colour_description_present_flag> is present and is set.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_VST/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_VUI_VST/artefacts/1.md>
                     [T] colour_description_present_flag
                         An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the <colour_primaries>, <transfer_characteristics> and <matrix_coefficients> syntax elements are present.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_description_present_flag/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/colour_description_present_flag/>
                         [T] colour_primaries
                             An AVC syntax element that indicates the chromaticity co-ordinates of the encoding.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_primaries/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/colour_primaries/>
                         [T] transfer_characteristics
                             An AVC syntax element that indicates the relationship between the scene or display brightness and the level of the luma and chroma signals.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/transfer_characteristics/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/transfer_characteristics/>
                         [T] matrix_coefficients
                             An AVC syntax element that indicates the matrix coefficients used to derive the luma and chroma signals from the colour primary signals.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/matrix_coefficients/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/matrix_coefficients/>
                 [A] For every Sequence Parameter Set the <video_full_range_flag> is present and is not set.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_VST/artefacts/2.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_VUI_VST/artefacts/2.md>
                     [T] video_full_range_flag
                         An AVC syntax element that indicates the black level and range of the luma and chroma signals.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/video_full_range_flag/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/video_full_range_flag/>
             [B] AVC Video Usability Information - Timing Info
                 Conformance: mandatory
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_VUI_TI/>
                 [A] For every Sequence Parameter Set the <fixed_frame_rate_flag> is present and is set.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AVC_VUI_TI/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AVC_VUI_TI/artefacts/1.md>
                     [T] fixed_frame_rate_flag
                         An AVC syntax element that indicates that constraints apply to the temporal distance between the output times of any two consecutive pictures.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/fixed_frame_rate_flag/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/fixed_frame_rate_flag/>
             [B] Picture Essence Descriptor constraints
                 Conformance: mandatory
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/PED_0/>
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Signal Standard" property is not present or has a value of `0`.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/PED_0/artefacts/1.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -2404,7 +2404,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 A bitstream comprising picture, sound or data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Transfer Characteristics" property is present.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/2.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/PED_0/artefacts/2.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -2415,7 +2415,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 A bitstream comprising picture, sound or data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Color Primaries" property is present.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/3.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/PED_0/artefacts/3.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -2426,7 +2426,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 A bitstream comprising picture, sound or data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Coding Equations" property is present.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/4.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/PED_0/artefacts/4.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -2437,7 +2437,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 A bitstream comprising picture, sound or data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Black Ref Level" property is present.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/5.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/PED_0/artefacts/5.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -2448,7 +2448,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 A bitstream comprising picture, sound or data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "White Ref Level" property is present.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/6.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/PED_0/artefacts/6.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -2459,7 +2459,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 A bitstream comprising picture, sound or data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "Color Range" property is present.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/PED_0/artefacts/7.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/PED_0/artefacts/7.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -2471,9 +2471,9 @@ An implementation complies with this Specification if it complies with the Compo
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [B] AFD Presence
                 Conformance: mandatory
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AFD_0/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/AFD_0/>
                 [A] In the <Picture Essence Descriptor> the (ordinarily optional) "ActiveFormatDescriptor" property is not present.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/AFD_0/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/block/AFD_0/artefacts/1.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -2484,39 +2484,39 @@ An implementation complies with this Specification if it complies with the Compo
                                 A bitstream comprising picture, sound or data.
                                 <Component ID: http://www.amwa.tv/projects/rules/01/term/Essence/>
             [N] Implementation Notes
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E21/>
+                <Component ID: http://www.amwa.tv/projects/rules/01/note/E21/>
                 [A] The constraints expressed here for the AVC bitstream result in an AVC "Level" of at least 5.1 or 5.2.
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E21/artefacts/1.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E21/artefacts/1.md>
                 [A] <ITU-T Rec H.264-201704> contains tables of enumerated values for the Video Usability Information paramaters mandated by the inclusion of the <colour_description_present_flag>.
                     The constraints expressed here for the picture format result in the following values for these parameters:
                     
                     * <colour_primaries>: `9`
                     * <transfer_characteristics>: `16` for "Perceptual Quantization" High Dynamic Range, `18` for "Hybrid Log-Gamma" High Dynamic Range and `14` for Standard Dynamic Range
                     * <matrix_coefficients>: `9`
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E21/artefacts/avc_vui.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E21/artefacts/avc_vui.md>
                     [R] ITU-T Rec H.264-201704
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/external_reference_revision/ITU%20T-Rec-H.264-201704/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/external_reference_revision/ITU%20T-Rec-H.264-201704/>
                     [T] colour_description_present_flag
                         An AVC syntax element that signals the presence of additional syntax elements that describe the colour properties of the encoding. When set equal to 1 it specifies that the <colour_primaries>, <transfer_characteristics> and <matrix_coefficients> syntax elements are present.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_description_present_flag/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/colour_description_present_flag/>
                         [T] colour_primaries
                             An AVC syntax element that indicates the chromaticity co-ordinates of the encoding.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_primaries/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/colour_primaries/>
                         [T] transfer_characteristics
                             An AVC syntax element that indicates the relationship between the scene or display brightness and the level of the luma and chroma signals.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/transfer_characteristics/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/transfer_characteristics/>
                         [T] matrix_coefficients
                             An AVC syntax element that indicates the matrix coefficients used to derive the luma and chroma signals from the colour primary signals.
-                            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/matrix_coefficients/>
+                            <Component ID: http://www.amwa.tv/projects/rules/01/term/matrix_coefficients/>
                     [T] colour_primaries
                         An AVC syntax element that indicates the chromaticity co-ordinates of the encoding.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/colour_primaries/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/colour_primaries/>
                     [T] transfer_characteristics
                         An AVC syntax element that indicates the relationship between the scene or display brightness and the level of the luma and chroma signals.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/transfer_characteristics/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/transfer_characteristics/>
                     [T] matrix_coefficients
                         An AVC syntax element that indicates the matrix coefficients used to derive the luma and chroma signals from the colour primary signals.
-                        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/term/matrix_coefficients/>
+                        <Component ID: http://www.amwa.tv/projects/rules/01/term/matrix_coefficients/>
                 [A] The constraints expressed here for the picture format result in the following values for properties of the <Picture Essence Descriptor>:
                     
                     * "Transfer Characteristics": `060e2b34.0401010d.04010101.010a0000` for "Perceptual Quantization" High Dynamic Range, `060e2b34.0401010d.04010101.010b0000` for "Hybrid Log-Gamma" High Dynamic Range and `060e2b34.0401010e.04010101.01090000` for Standard Dynamic Range
@@ -2525,7 +2525,7 @@ An implementation complies with this Specification if it complies with the Compo
                     * "Black Ref Level": `64`
                     * "White Ref Level": `940`
                     * "Color Range": `897`
-                    <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E21/artefacts/ped.md>
+                    <Component ID: http://www.amwa.tv/projects/rules/01/note/E21/artefacts/ped.md>
                     [T] Picture Essence Descriptor
                         MXF technical metadata that describes the <Picture Essence>.
                         <Component ID: http://www.amwa.tv/projects/rules/01/term/Picture%20Essence%20Descriptor/>
@@ -2538,12 +2538,12 @@ An implementation complies with this Specification if it complies with the Compo
     [V] File Format Specification Identification Label
         Conformance: mandatory
         Associated Parameter Key: "File Format Specification Identification Label" (Component ID: http://www.amwa.tv/projects/rules/01/block/param3/)
-        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_3/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_3/>
         [B] Blocks_FF_1
             Conformance: mandatory
-            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L1/>
-            [A] Artefact copied to: ../specification_data_files/vm-1274-user.virt.ch.bbc.co.uk_c064c30/block/SpecID_L1/artefacts/Labels.xml
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/SpecID_L1/artefacts/Labels.xml>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID_L1/>
+            [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/SpecID_L1/artefacts/Labels.xml
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/SpecID_L1/artefacts/Labels.xml>
     [V] Labels for use in Multichannel Audio Labeling Framework
         Conformance: mandatory
         Associated Parameter Key: "Labels for use in Multichannel Audio Labeling Framework" (Component ID: http://www.amwa.tv/projects/rules/01/block/param4/)
@@ -2663,12 +2663,12 @@ An implementation complies with this Specification if it complies with the Compo
     [V] Extra Audio Layout Modes
         Conformance: mandatory
         Associated Parameter Key: "Extra Audio Layout Modes" (Component ID: http://www.amwa.tv/projects/rules/01/block/param1/)
-        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_9/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_9/>
         [B] Permitted Extra Audio Layout Modes
             Conformance: mandatory
-            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/EALM_1/>
+            <Component ID: http://www.amwa.tv/projects/rules/01/block/EALM_1/>
             [A] The following are permitted: <Audio Layout Mode 1>.
-                <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/EALM_1/artefacts/1.md>
+                <Component ID: http://www.amwa.tv/projects/rules/01/block/EALM_1/artefacts/1.md>
                 [B] Audio Layout Mode 1
                     <Component ID: http://www.amwa.tv/projects/rules/01/block/ALM1/>
                     [A] <Channel Assignment Label> is <ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A>.
@@ -2779,7 +2779,7 @@ An implementation complies with this Specification if it complies with the Compo
                                 [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml
                                     <Component ID: http://www.amwa.tv/projects/rules/01/note/AL_Default_A_RegXML_Example/artefacts/default_audio_layout_a_regxml.xml>
     [N] Audio Layout Modes summary
-        <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E15/>
+        <Component ID: http://www.amwa.tv/projects/rules/01/note/E15/>
         [A] A summary of the {Audio Layout Mode}s available in this Specification is in the table below. Note that every MXF file must use one of the listed modes.
             
             In all defined modes there can be between 0 and 127 (inclusive) Sound Tracks in the MXF file.
@@ -2788,7 +2788,7 @@ An implementation complies with this Specification if it complies with the Compo
             ------------------- | -------------------------------------------------------------------------- | ----------------------- | ------------------------------
             Audio Layout Mode 0 | ConstrainedMultichannelAudioLabelingFramework                              |          true           | **NOT SET** (no assumptions can be made)
             Audio Layout Mode 1 | ConstrainedMultichannelAudioLabelingFramework_with_Default_Audio_Layout_A  |          true           | Default Audio Layout 'A'
-            <Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/note/E15/artefacts/1.md>
+            <Component ID: http://www.amwa.tv/projects/rules/01/note/E15/artefacts/1.md>
 
 
 

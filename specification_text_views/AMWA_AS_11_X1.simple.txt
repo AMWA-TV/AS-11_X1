@@ -1,4 +1,4 @@
-# **[Work In Progress]** AS-11 X1 (MXF Program Contribution - DPP UHD)
+# **[Specification]** AS-11 X1 (MXF Program Contribution - DPP UHD)
 
 |*Important links*| |
 |-----------------|-|
@@ -198,7 +198,7 @@ An implementation complies with this Specification if it complies with the Compo
                         4 bytes BER long-form encoded length is limited to 16 MiB (FF.FF.FF). This might become restrictive at the maximum data rates allowed by AVC at Level 5.
             [K] Picture Essence Constraints
                 Conformance: mandatory
-                Associated Parameter Value: "Picture Essence Constraints" (Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_4/)
+                Associated Parameter Value: "Picture Essence Constraints" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_4/)
                 [A] Specifies further constraints on the "Picture Essence" and its mapping to the MXF file.
         [B] Multichannel, 24-bit, 48 kHz, uncompressed PCM, mapped with ST 382
             Conformance: mandatory
@@ -270,7 +270,7 @@ An implementation complies with this Specification if it complies with the Compo
                         [A] <MCA Labeling Present> is "true".
                         [A] <Default Audio Layout> is not set (no assumptions can be made about audio layout).
                     [K] Extra Audio Layout Modes
-                        Associated Parameter Value: "Extra Audio Layout Modes" (Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_9/)
+                        Associated Parameter Value: "Extra Audio Layout Modes" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_9/)
                 [A] If <Constrained Multichannel Audio Labeling Framework> is used then any device or system that reads, writes or otherwise processes the file supports <Labels for use in Multichannel Audio Labeling Framework>.
                     [B] Constrained Multichannel Audio Labeling Framework
                         [A] The file uses the Multichannel Audio Labeling Framework specified in <SMPTE ST 377-4:2012>.
@@ -409,7 +409,7 @@ An implementation complies with this Specification if it complies with the Compo
                     [N] SMPTE Registers Node: Specification_Identification (Labels Register)
                         [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/note/Specification_Identification_L/artefacts/Labels.xml
                 [K] File Format Specification Identification Label
-                    Associated Parameter Value: "File Format Specification Identification Label" (Component ID: http://vm-1274-user.virt.ch.bbc.co.uk/as/block/param_link_3/)
+                    Associated Parameter Value: "File Format Specification Identification Label" (Component ID: http://www.amwa.tv/projects/rules/01/block/param_link_3/)
         [B] Dolby Audio Metadata
             Conformance: optional
             [A] The <Dolby E Audio Metadata Serial Bitstream> that describes an <Audio Program> is included in the file using <Dolby E Audio Metadata Serial Bitstream Carriage>.
@@ -572,7 +572,7 @@ An implementation complies with this Specification if it complies with the Compo
         Associated Parameter Key: "File Format Specification Identification Label" (Component ID: http://www.amwa.tv/projects/rules/01/block/param3/)
         [B] Blocks_FF_1
             Conformance: mandatory
-            [A] Artefact copied to: ../specification_data_files/vm-1274-user.virt.ch.bbc.co.uk_c064c30/block/SpecID_L1/artefacts/Labels.xml
+            [A] Artefact copied to: ../specification_data_files/www.amwa.tv_c0f7b64/block/SpecID_L1/artefacts/Labels.xml
     [V] Labels for use in Multichannel Audio Labeling Framework
         Conformance: mandatory
         Associated Parameter Key: "Labels for use in Multichannel Audio Labeling Framework" (Component ID: http://www.amwa.tv/projects/rules/01/block/param4/)
