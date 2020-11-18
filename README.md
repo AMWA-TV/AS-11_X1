@@ -1,6 +1,6 @@
 # **[Specification]** AS-11 X1 (MXF Program Contribution - DPP UHD)
 
-This repository contains the full details of this [AMWA Specification](http://amwa.tv/projects/AS-11-X1/). For the latest version of this repository please refer to [its GitHub project](https://github.com/AMWA-TV/AS-11_X1/).
+This repository contains the full details of this [AMWA Specification](https://www.amwa.tv/as-11-x1/). For the latest version of this repository please refer to [its GitHub project](https://github.com/AMWA-TV/AS-11_X1/).
 
 ## Getting Started
 
