@@ -17,7 +17,7 @@ The AMWA AS-11 Specifications define constrained media file formats for the deli
 
 ## Aims
 
-This Specification aims to define a file format for the delivery of finished UHD TV Programmes to UK [Digital Production Partnership](https://www.digitalproductionpartnership.co.uk/) (DPP) broadcasters. It aims to define:
+This Specification aims to define a file format for the delivery of finished UHD TV Programmes to UK [Digital Production Partnership](https://www.thedpp.com/) (DPP) broadcasters. It aims to define:
 
 * a vendor-neutral and broadcaster-neutral package, using open technologies for delivery of finished programming from program producers and program distributors to broadcast stations
 * a package that is sufficiently simple so as to limit the scope for interoperability problems
