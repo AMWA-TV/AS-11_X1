@@ -13,7 +13,7 @@ Information on the further development and implementation of this and other AMWA
 
 ## Specification Change History
 
-The full Specification history is available [here](https://github.com/AMWA-TV/AS-11_X1/commits). It is best to ignore changes to `AMWA_AS_11_X1.html` when examining the history of this repository. (All the pertinent changes will be apparent in other files.)
+The list of releases is available [here](https://github.com/AMWA-TV/AS-11_X1/releases). The full Specification history is available [here](https://github.com/AMWA-TV/AS-11_X1/commits). It is best to ignore changes to `AMWA_AS_11_X1.html` when examining the history of this repository. (All the pertinent changes will be apparent in other files.)
 
 ## Full Repository Contents
 
