@@ -1,4 +1,4 @@
-# **[Specification]** AS-11 X1 (MXF Program Contribution - DPP UHD)
+# **[Specification (Published)]** AS-11 X1 (MXF Program Contribution - DPP UHD)
 
 |*Important links*| |
 |-----------------|-|
